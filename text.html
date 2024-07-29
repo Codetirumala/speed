@@ -31,7 +31,7 @@ def aStarAlgo(start_node, stop_node):
                         #change parent of m to n
                         parents[m] = n
                         #if m in closed set,remove and add to open
-                        if m in closed_set:
+                        if  m in closed_set:
                             closed_set.remove(m)
                             open_set.add(m)
         if n == None:
