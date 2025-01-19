@@ -10,7 +10,7 @@ def aStarAlgo(start_node, stop_node):
     parents[start_node] = start_node
     while len(open_set) > 0:
         n = None
-        #node with lowest f() is found
+        #noode with lowest f() is found
         for v in open_set:
             if n == None or g[v] + heuristic(v) < g[n] + heuristic(n):
                 n = v
